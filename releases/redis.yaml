@@ -28,7 +28,8 @@ spec:
       type: ClusterIP
       port: 6379
     cluster:
-      enabled: false
+      enabled: true
+      slaveCount: 2
     master:
       securityContext:
         enabled: false
